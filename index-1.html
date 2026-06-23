@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrangi Comedy - YouTube Channel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- WELCOME POPUP -->
+    <div id="welcomePopup" class="popup-overlay">
+        <div class="popup-content welcome-popup">
+            <div class="popup-close" onclick="closeWelcomePopup()">&times;</div>
+            <div class="popup-logo">
+                <img src="logo.png" alt="Atrangi Comedy Logo" class="logo-img">
+            </div>
+            <h2>Welcome to Atrangi Comedy! 🎭</h2>
+            <p>AI-Powered Desi Comedy Shorts</p>
+            <div class="popup-buttons">
+                <button class="btn btn-primary" onclick="openLink('https://www.youtube.com/@Atrangi-Comedy_1'); closeWelcomePopup();">
+                    ▶️ SUBSCRIBE NOW
+                </button>
+                <button class="btn btn-secondary" onclick="closeWelcomePopup();">
+                    Explore Website
+                </button>
+            </div>
+            <p class="popup-footer">Don't miss daily comedy uploads! 🔔</p>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION POPUP -->
+    <div id="notificationPopup" class="notification-popup">
+        <span class="notification-close" onclick="closeNotification()">&times;</span>
+        <i class="fas fa-bell"></i>
+        <strong>New Upload!</strong>
+        <p>Check out our latest comedy shorts</p>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-brand">
+                <img src="logo.png" alt="Atrangi Comedy" class="navbar-logo">
+                <span class="brand-text">ATRANGI COMEDY</span>
+            </div>
+         
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#videos" class="nav-link" onclick="scrollToSection('videos')">Videos</a></li>
+                <li><a href="#characters" class="nav-link" onclick="scrollToSection('characters')">Characters</a></li>
+                <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-logo-large">
+                <img src="logo.png" alt="Atrangi Comedy Logo" class="animated-logo">
+            </div>
+            <h1 class="fade-in-down">ATRANGI COMEDY</h1>
+            <p class="hero-subtitle fade-in-down">AI-Powered Desi Comedy Shorts</p>
+            <p class="hero-description fade-in-down">Viral Videos | Character Comedy | Trending Memes</p>
+            
+            <div class="hero-stats fade-in-up">
+                <div class="stat stat-card">
+                    <span class="stat-number">90</span>
+                    <span class="stat-label">Subscribers</span>
+                </div>
+                <div class="stat stat-card">
+                    <span class="stat-number">1K</span>
+                    <span class="stat-label">Target Goal</span>
+                </div>
+                <div class="stat stat-card">
+                    <span class="stat-number">Daily</span>
+                    <span class="stat-label">Upload Schedule</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons fade-in-up">
+                <button class="btn btn-primary glow-effect" onclick="openLink('https://www.youtube.com/@Atrangi-Comedy_1')">
+                    <i class="fas fa-play"></i> SUBSCRIBE NOW
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">📊 About the Channel</h2>
+            
+            <div class="about-grid">
+                <div class="about-card hover-lift">
+                    <div class="about-icon">📺</div>
+                    <h3>Channel Name</h3>
+                    <p>@Atrangi-Comedy_1</p>
+                </div>
+                <div class="about-card hover-lift">
+                    <div class="about-icon">🎯</div>
+                    <h3>Niche</h3>
+                    <p>AI-Powered Comedy Shorts</p>
+                </div>
+                <div class="about-card hover-lift">
+                    <div class="about-icon">📱</div>
+                    <h3>Format</h3>
+                    <p>10-60 Second Shorts</p>
+                </div>
+                <div class="about-card hover-lift">
+                    <div class="about-icon">🌍</div>
+                    <h3>Language</h3>
+                    <p>Hindi/Hinglish</p>
+                </div>
+            </div>
+
+            <div class="growth-section">
+                <h3>🚀 Growth Roadmap</h3>
+                <div class="timeline">
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-marker">📍</div>
+                        <div class="timeline-content">
+                            <h4>Month 1-2: Foundation</h4>
+                            <p>90 → 500 subs | Daily uploads | Community building</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-marker">📍</div>
+                        <div class="timeline-content">
+                            <h4>Month 3: Milestone</h4>
+                            <p>500 → 1,000 subs ✅ | Monetization ready</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-marker">📍</div>
+                        <div class="timeline-content">
+                            <h4>Month 4-6: Scale</h4>
+                            <p>1K → 5K+ subs | Brand partnerships | Revenue</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS SECTION -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2 class="section-title">🎬 Latest Videos</h2>
+            <p class="section-subtitle">Upload Daily - Check Back For New Content!</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterVideos('all')">All</button>
+                <button class="filter-btn" onclick="filterVideos('sharma')">Sharma Aunty</button>
+                <button class="filter-btn" onclick="filterVideos('cctv')">CCTV Aunty</button>
+                <button class="filter-btn" onclick="filterVideos('trending')">Trending</button>
+            </div>
+
+            <div class="videos-grid" id="videosGrid">
+                <!-- Videos will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARACTERS SECTION -->
+    <section id="characters" class="characters">
+        <div class="container">
+            <h2 class="section-title">🎭 Our Characters</h2>
+            <p class="section-subtitle">Unique & Hilarious Personalities!</p>
+            
+            <div class="characters-grid">
+                <div class="character-card flip-card">
+                    <div class="character-emoji">👵</div>
+                    <h3>Sharma Aunty</h3>
+                    <p>The confused aunty dealing with modern technology</p>
+                    <span class="character-tag">Relatable</span>
+                </div>
+                <div class="character-card flip-card">
+                    <div class="character-emoji">📹</div>
+                    <h3>CCTV Aunty</h3>
+                    <p>The watchful guardian who sees everything</p>
+                    <span class="character-tag">Unique</span>
+                </div>
+                <div class="character-card flip-card">
+                    <div class="character-emoji">👔</div>
+                    <h3>Gupta Uncle</h3>
+                    <p>The strict uncle with old school comedy</p>
+                    <span class="character-tag">Funny</span>
+                </div>
+                <div class="character-card flip-card">
+                    <div class="character-emoji">📚</div>
+                    <h3>Topper Beta</h3>
+                    <p>The nerdy student with relatable humor</p>
+                    <span class="character-tag">Viral</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT TYPES SECTION -->
+    <section class="content-types">
+        <div class="container">
+            <h2 class="section-title">📱 Content Types</h2>
+            <div class="content-grid">
+                <div class="content-item bounce-item">
+                    <div class="content-icon">🤖</div>
+                    <h4>AI Comedy Videos</h4>
+                    <p>AI-generated funny content</p>
+                </div>
+                <div class="content-item bounce-item">
+                    <div class="content-icon">😂</div>
+                    <h4>Viral Memes</h4>
+                    <p>Trending & relatable humor</p>
+                </div>
+                <div class="content-item bounce-item">
+                    <div class="content-icon">📱</div>
+                    <h4>YouTube Shorts</h4>
+                    <p>10-60 second format</p>
+                </div>
+                <div class="content-item bounce-item">
+                    <div class="content-icon">🎨</div>
+                    <h4>Custom Thumbnails</h4>
+                    <p>Eye-catching CTR boosting</p>
+                </div>
+                <div class="content-item bounce-item">
+                    <div class="content-icon">✍️</div>
+                    <h4>Original Scripts</h4>
+                    <p>Fresh comedy ideas daily</p>
+                </div>
+                <div class="content-item bounce-item">
+                    <div class="content-icon">📸</div>
+                    <h4>Trending Content</h4>
+                    <p>Latest sounds & memes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY SUBSCRIBE SECTION -->
+    <section class="why-subscribe">
+        <div class="container">
+            <h2 class="section-title">✨ Why Subscribe?</h2>
+            <div class="why-grid">
+                <div class="why-card pulse-effect">
+                    <div class="why-icon">🤖</div>
+                    <h3>AI + Comedy</h3>
+                    <p>Unique combination you'll love</p>
+                </div>
+                <div class="why-card pulse-effect">
+                    <div class="why-icon">😂</div>
+                    <h3>Viral Potential</h3>
+                    <p>Trending concepts daily</p>
+                </div>
+                <div class="why-card pulse-effect">
+                    <div class="why-icon">🎭</div>
+                    <h3>Memorable Characters</h3>
+                    <p>You'll relate to every one</p>
+                </div>
+                <div class="why-card pulse-effect">
+                    <div class="why-icon">🚀</div>
+                    <h3>Daily Fresh Content</h3>
+                    <p>Always new to watch</p>
+                </div>
+                <div class="why-card pulse-effect">
+                    <div class="why-icon">📱</div>
+                    <h3>Perfect for Shorts</h3>
+                    <p>Comedy gold in short format</p>
+                </div>
+                <div class="why-card pulse-effect">
+                    <div class="why-icon">💯</div>
+                    <h3>Quality Content</h3>
+                    <p>Professional production value</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">📞 Get In Touch</h2>
+            <p class="section-subtitle">Business Inquiries & Collaborations</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card hover-lift">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p class="contact-text">aikumar.5318@gmail.com</p>
+                        <button class="btn btn-secondary" onclick="openLink('mailto:aikumar.5318@gmail.com')">
+                            Send Email
+                        </button>
+                    </div>
+                    
+                    <div class="contact-card hover-lift">
+                        <div class="contact-icon">📱</div>
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <button class="social-btn" onclick="openLink('https://www.youtube.com/@Atrangi-Comedy_1')" title="YouTube">▶️</button>
+                            <button class="social-btn" onclick="openLink('https://instagram.com/atrangi_reel')" title="Instagram">📷</button>
+                            <button class="social-btn" onclick="openLink('https://wa.me/916299650481')" title="WhatsApp">💬</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card hover-lift">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p class="contact-text">Mithapur, Bihar, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mgorkqpk" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="successMessage" style="display:none;color:#00ff66;margin-top:15px;font-weight:bold;">
+                        ✅ Thank you! Your message has been sent.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Atrangi Comedy. All rights reserved.</p>
+            <p>Made with ❤️ by Ankur Kumar</p>
+            <p>Subscribe & Turn on Notifications for Daily Comedy! 🔔</p>
+        </div>
+    </footer>
+
+    <!-- MODAL FOR VIDEO PLAYER -->
+    <div id="videoModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="videoFrame" width="100%" height="500" src="" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
