@@ -1338,3 +1338,8 @@ body {
     font-size: 0.9rem;
     color: #aaa;
 }
+.character-card,
+.video-card,
+.about-card {
+    transition: transform 0.1s ease-out;
+}
