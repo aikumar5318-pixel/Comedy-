@@ -541,3 +541,25 @@ window.addEventListener('load', () => {
     animateCounter(document.getElementById('videoCount'), 12);
     animateCounter(document.getElementById('viewCount'), 5000);
 });
+// Counter Animation
+function animateCounter(element, target, duration = 2000) {
+    let current = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Initialize counters when page loads
+window.addEventListener('load', () => {
+    animateCounter(document.getElementById('subCount'), 150); // Your actual count
+    animateCounter(document.getElementById('videoCount'), 12);
+    animateCounter(document.getElementById('viewCount'), 5000);
+});
