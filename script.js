@@ -78,9 +78,9 @@ function closeNotification() {
 // Sample video data
 const videoDatabase = [
     {
-        id: zeJj2nW7g2E,
+        id: 1,
         title: 'Sharma Aunty vs Smartphone',
-        emoji: 'zeJj2nW7g2E',
+        emoji: '📳',
         category: 'sharma',
         link: 'https://youtube.com/shorts/zeJj2nW7g2E'
     },
@@ -89,7 +89,7 @@ const videoDatabase = [
         title: 'CCTV Aunty Caught Me',
         emoji: '📹',
         category: 'cctv',
-        link: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+        link: 'https://youtu.be/2zMI77_RHs8?si=iQa538Wll4ZZureL'
     },
     {
         id: 3,
