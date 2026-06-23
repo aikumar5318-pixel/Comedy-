@@ -82,7 +82,7 @@ const videoDatabase = [
         title: 'Sharma Aunty vs Smartphone',
         emoji: '📱',
         category: 'sharma',
-        link: 'zeJj2nW7g2E'
+        link: 'https://youtube.com/shorts/zeJj2nW7g2E'
     },
     {
         id: 2,
